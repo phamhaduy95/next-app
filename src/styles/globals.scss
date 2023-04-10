@@ -1,0 +1,35 @@
+@import "./test.scss";
+@import "../components/Popup/Popup.scss";
+@import "../components/Tooltip/Tooltips.scss";
+
+:root {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --components-lib-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --components-lib-primary-color: #1980e6;
+    --components-lib-primary-color-hover: hsla(210, 90%, 95%);
+    --components-lib-primary-color-active: #0b62da;
+    --components-lib-secondary-color: #cccccc;
+    --components-lib-secondary-color-hover: #ebebeb;
+    --components-lib-secondary-color-active: #bfbfbf;
+    --components-lib-success-color: #4dcc33;
+    --components-lib-success-color-hover: #edfee7;
+    --components-lib-success-color-active: #3b9933;
+    --components-lib-error-color: #d33131;
+    --components-lib-error-color-hover: #ffe5e5cc;
+    --components-lib-error-color-active: #ad1f1f;
+    --components-lib-warning-color: hsl(30, 90%, 50%);
+    --components-lib-warning-color-hover: hsl(40, 100%, 90%);
+    --components-lib-warning-color-active: hsl(25, 70%, 50%);
+    --components-lib-border: 1px solid #cccccc;
+    --components-lib-text-color: hsl(208, 20%, 25%);
+    --components-lib-text-color-dark: #f7f7f7;
+    --components-lib-font-size-big: min(calc(0.9rem + 0.4vw), 1.2rem);
+    --components-lib-font-size-med: min(calc(0.8rem + 0.4vw), 1.05rem);
+    --components-lib-font-size-sml: min(calc(0.7rem + 0.4vw), 0.92rem);
+    --components-lib-box-shadow-popup: 0 2px 8px 1px #66666666;
+    --components-lib-box-shadow-focus: 0 0 2px 2px #195ee680;
+    --components-lib-box-shadow-success: 0 0 2px 2px #19e61980;
+    --components-lib-box-shadow-error: 0 0 2px 2px #eb474780;
+  }
+  

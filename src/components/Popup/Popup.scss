@@ -1,0 +1,92 @@
+$arrow-size: 8px;
+$haft-arrow-size: $arrow-size / 2;
+$animation-duration: 0.15s;
+
+.Popup {
+  z-index: 1000;
+
+  border-radius: 3px;
+  width: max-content;
+  background-color: transparent;
+  transition: opacity $animation-duration ease-in 0s,
+    visibility $animation-duration ease;
+  display: flex;
+
+  @at-root .Popup__Content {
+    position: relative;
+    background: white;
+    display: block; 
+    margin-top: 5px;
+    padding: 1em;
+    border: var(--components-lib-border);
+
+    > .Popup_Arrow {
+      visibility: hidden;
+      position: absolute;
+      width: $arrow-size;
+      height: $arrow-size;
+      z-index: 2;
+      background: inherit;
+  
+      &::before {
+        transition: opacity $animation-duration ease-in 0s,
+          visibility $animation-duration ease;
+        content: "";
+        visibility: visible;
+        background: inherit;
+        position: absolute;
+        width: $arrow-size;
+        height: $arrow-size;
+        border: 1px solid grey;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+ 
+
+  &[data-popper-placement^="top"]  .Popup_Arrow {
+    bottom: calc(-0px - $haft-arrow-size);
+    &::before {
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  &[data-popper-placement^="bottom"]  .Popup_Arrow {
+    top: calc(-0px - $haft-arrow-size);
+    &::before {
+      border-bottom: none;
+      border-right: none;
+    }
+  }
+
+  &[data-popper-placement^="left"] .Popup_Arrow {
+    right: calc(-0px - $haft-arrow-size);
+    &::before {
+      border-bottom: none;
+      border-left: none;
+    }
+  }
+
+  &[data-popper-placement^="right"] .Popup_Arrow {
+    left: calc(-0px - $haft-arrow-size);
+    &::before {
+      border-top: none;
+      border-right: none;
+    }
+  }
+
+  &:not(.showed) {
+    opacity: 0;
+    visibility: collapse;
+     .Popup_Arrow {
+      &::before {
+        visibility: collapse;
+        opacity: 0;
+      }
+    }
+  }
+
+  
+}
