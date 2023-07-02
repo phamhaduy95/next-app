@@ -3,10 +3,10 @@ import React, { MutableRefObject, useRef } from "react";
 
 import classNames from "classnames";
 import usePopupWidthHandler from "./usePopupWidthHandler";
-import Portal from "../Portal/Portal";
+import Portal from "../Portal/typed/Portal";
 import usePopupPlacementHandler from "./usePopupPlacementHandler";
 import { ClickOutSideWatcher } from "../ClickOutsideWatcher";
-import { usePortalStore } from "../Portal/store";
+import { usePortalStore } from "../Portal/typed/store";
 import usePopperPaddingHandler from "./usePopperPaddingHandler";
 
 export type PopupProps = {

@@ -1,0 +1,16 @@
+.container {
+  display: block;
+  margin: 5rem auto;
+  padding: 0.5rem;
+
+  > .list {
+    display: flex;
+    flex-direction: column;
+
+    > .listItem {
+      list-style: none;
+
+      margin-top: 5px;
+    }
+  }
+}

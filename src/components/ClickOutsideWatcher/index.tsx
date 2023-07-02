@@ -1,1 +1,1 @@
-export * from "./ClickOutSideWatcher";
+export * from './ClickOutSideWatcher';
