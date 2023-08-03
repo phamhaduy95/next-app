@@ -1,20 +1,14 @@
-import { Placement } from "@popperjs/core";
-import { MutableRefObject, useEffect } from "react";
-import { PopupProps } from "./Popup";
+import { MutableRefObject, useEffect } from 'react';
+import { PopupProps } from './Popup';
 
 export default function useArrowPositionHandler(
-  contentRef: MutableRefObject<HTMLElement | null>,
-  arrowRef: MutableRefObject<HTMLElement | null>,
-  placement:PopupProps["placement"],
+    contentRef: MutableRefObject<HTMLElement | null>,
+    arrowRef: MutableRefObject<HTMLElement | null>,
+    placement: PopupProps['placement']
 ) {
-    useEffect(()=>{
+    useEffect(() => {
         const contentEl = contentRef.current;
         const arrowEl = arrowRef.current;
         if (contentEl === null || arrowEl === null) return;
-        
-
-
-    },[placement])
+    }, [arrowRef, contentRef, placement]);
 }
-
-
