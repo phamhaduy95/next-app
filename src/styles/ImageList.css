@@ -1,0 +1,31 @@
+.CP_ImageList {
+    display: flex;
+    width: 100%;
+}
+
+.CP_ImageList_ImageWrapper {
+    width: min-content;
+    height: min-content;
+    margin-right: 0.25rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.CP_ImageList_ImageWrapper.CP_is-last-image {
+    position: relative;
+}
+
+.CP_ImageList_RemainingNumber {
+    position: absolute;
+    caret-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsla(220, 80%, 30%, 0.5);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

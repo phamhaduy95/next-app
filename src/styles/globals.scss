@@ -1,6 +1,7 @@
-@import "./test.scss";
-@import "../components/Popup/Popup.scss";
-@import "../components/Tooltip/Tooltips.scss";
+@import './test.scss';
+@import '../components/Popup/Popup.scss';
+@import '../components/Tooltip/Tooltips.scss';
+@import './ImageList.css';
 
 :root {
     box-sizing: border-box;
@@ -31,5 +32,4 @@
     --components-lib-box-shadow-focus: 0 0 2px 2px #195ee680;
     --components-lib-box-shadow-success: 0 0 2px 2px #19e61980;
     --components-lib-box-shadow-error: 0 0 2px 2px #eb474780;
-  }
-  
+}
